@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    width: 100vw;
+    height: 50px;
+    background-color:orangered;
+    font-size: 22px;
+    position: fixed;
+    z-index: 10;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+     border-bottom: 3px solid black;  
+}
+
+.Home{
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    font-family: "Poppins", serif;
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 50px;
+    color: white;
+}
+h2{
+    font-size: 35px;
+    position: absolute;
+    top: 140px;
+    left: 170px;
+    animation:ani 3s infinite linear;
+    
+}
+@keyframes ani{
+    0%{
+        color: white;
+    }
+    40%{
+       color:chartreuse;
+    }
+    100%{
+        color:orangered;
+    }
+}
+p{
+    width: 800px;
+    font-size: 25px;
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    color: white;
+}
+.about{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+
+}
+.left img{
+   height: 300px;
+   width: 300px;
+   border-radius: 30px;
+}
+.right span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.right ul{
+    margin-top: 30px;
+}
+.right ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.contact{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+
+}
+
+.form{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+.form h3{
+    padding: 10px;
+}
+.formname{
+    padding: 10px 40px;
+}
+.formemail{
+    padding: 10px 40px;
+}
+.formmessage{
+    padding: 50px 40px;
+}
+button{
+    padding: 10px 20px;
+}
+button:hover{
+    background-color: orangered;
+    border: none;
+}
